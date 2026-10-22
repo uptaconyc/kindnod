@@ -1,5 +1,5 @@
 // kindnod: loads the Kindnod banner script once. Works with no options at all.
-//   import { loadKindnod } from "kindnod";
+//   import { loadKindnod } from "@kindnod/consent";
 //   loadKindnod();                              // keyless: the site is provisioned on first load
 //   loadKindnod({ owner: "you@example.com" });  // get the claim link by email
 //   loadKindnod({ siteKey: "abc123" });         // a site you already created
