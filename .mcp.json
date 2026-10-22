@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kindnod": {
+      "type": "http",
+      "url": "https://kindnod.com/api/mcp"
+    }
+  }
+}
