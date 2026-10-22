@@ -3,14 +3,14 @@
 GDPR cookie consent for any site, with Google Consent Mode v2, script blocking, a consent log, and a Cookiebot-compatible JavaScript API. 17 KB. No account needed to install: the site is provisioned on first load from a public domain and the owner claims the dashboard later.
 
 ```bash
-npm install kindnod
+npm install @kindnod/consent
 ```
 
 ## React / Next.js
 
 ```tsx
 // app/layout.tsx
-import { KindnodConsent } from "kindnod/react";
+import { KindnodConsent } from "@kindnod/consent/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 Gate anything that sets cookies:
 
 ```tsx
-import { Gated, useConsent } from "kindnod/react";
+import { Gated, useConsent } from "@kindnod/consent/react";
 
 <Gated category="statistics"><Analytics /></Gated>
 ```
@@ -33,7 +33,7 @@ import { Gated, useConsent } from "kindnod/react";
 ## Plain JavaScript
 
 ```js
-import { loadKindnod, onConsent } from "kindnod";
+import { loadKindnod, onConsent } from "@kindnod/consent";
 loadKindnod();
 onConsent((c) => { if (c.marketing) initPixel(); });
 ```

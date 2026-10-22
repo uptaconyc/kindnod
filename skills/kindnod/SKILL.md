@@ -18,11 +18,11 @@ Plain HTML (every page, before `</head>`):
 React / Next.js:
 
 ```bash
-npm install kindnod
+npm install @kindnod/consent
 ```
 
 ```tsx
-import { KindnodConsent } from "kindnod/react";
+import { KindnodConsent } from "@kindnod/consent/react";
 // once, in the root layout or _app
 <KindnodConsent owner="OWNER_EMAIL" via="claude-code" />
 ```
@@ -34,7 +34,7 @@ Replace `OWNER_EMAIL` with the site owner's email if you know it (they get a lin
 Analytics and pixels must not run before consent. Either:
 
 - Change `type="text/javascript"` to `type="text/plain"` and add `data-kindnod="statistics"` (analytics) or `data-kindnod="marketing"` (ads, pixels). Kindnod releases them on consent.
-- In React, wrap them: `<Gated category="statistics">…</Gated>` from `kindnod/react`.
+- In React, wrap them: `<Gated category="statistics">…</Gated>` from `@kindnod/consent/react`.
 - If the site uses Google Tag Manager, do nothing: Consent Mode v2 handles it.
 
 Categories: `preferences`, `statistics`, `marketing`.
