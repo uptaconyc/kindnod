@@ -1,5 +1,5 @@
 {
-  "name": "kindnod",
+  "name": "@kindnod/consent",
   "version": "0.1.0",
   "description": "GDPR cookie consent banner with Google Consent Mode v2, script blocking, and a Cookiebot-compatible API. Zero config: no account needed to install.",
   "license": "MIT",

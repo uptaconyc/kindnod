@@ -10,5 +10,9 @@
       "type": "streamable-http",
       "url": "https://kindnod.com/api/mcp"
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/uptaconyc/kindnod",
+    "source": "github"
+  }
 }

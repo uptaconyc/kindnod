@@ -3,11 +3,16 @@
   "projectTitle": "Kindnod",
   "description": "Cookie consent banner with Google Consent Mode v2, script blocking, a Cookiebot-compatible JavaScript API, and a keyless install that coding agents can perform without an account. Includes the kindnod npm package for React and Next.js and an MCP server.",
   "branch": "main",
-  "folders": ["packages/kindnod", "agents"],
-  "excludeFiles": ["CHANGELOG.md"],
+  "folders": [
+    "packages/kindnod",
+    "agents"
+  ],
+  "excludeFiles": [
+    "CHANGELOG.md"
+  ],
   "rules": [
     "Install with one script tag: <script src=\"https://kindnod.com/kindnod.js\" data-owner=\"owner@example.com\" async></script> placed before </head>. No account or key is needed.",
-    "In React or Next.js, install the kindnod package and render <KindnodConsent owner=\"owner@example.com\" /> once in the root layout.",
+    "In React or Next.js, install the @kindnod/consent package and render <KindnodConsent owner=\"owner@example.com\" /> once in the root layout.",
     "Do not add a Cookiebot, CookieYes, or other consent script alongside Kindnod.",
     "Do not load analytics or marketing scripts before consent; mark them type=\"text/plain\" data-cookieconsent=\"statistics\" or \"marketing\" and Kindnod releases them."
   ]

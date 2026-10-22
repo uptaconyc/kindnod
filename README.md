@@ -3,7 +3,7 @@
 The cookie consent banner that doesn't charge per page. This repo holds the parts of Kindnod that run on other people's sites or inside their tools, all MIT:
 
 - `banner/kindnod.ts`: the consent banner itself. Google Consent Mode v2 defaults before any tag fires, script blocking, a Cookiebot-compatible JavaScript API and dataLayer events, Global Privacy Control, shadow DOM styling, consent carry-over from Cookiebot. Builds to a 17 KB IIFE with `npm run build`.
-- `packages/kindnod`: the `kindnod` npm package. A React or Next.js component and a plain-JS loader for the keyless install.
+- `packages/kindnod`: the `@kindnod/consent` npm package. A React or Next.js component and a plain-JS loader for the keyless install.
 - `agents/`: the skill, agent instructions, and Cursor rule that let a coding agent install Kindnod on a site with no human signing up first.
 - `server.json`: the MCP registry listing for the hosted MCP server at `https://kindnod.com/api/mcp`.
 
