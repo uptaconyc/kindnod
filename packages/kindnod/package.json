@@ -1,0 +1,61 @@
+{
+  "name": "kindnod",
+  "version": "0.1.0",
+  "description": "GDPR cookie consent banner with Google Consent Mode v2, script blocking, and a Cookiebot-compatible API. Zero config: no account needed to install.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./react": {
+      "types": "./react.d.ts",
+      "default": "./react.js"
+    },
+    "./next": {
+      "types": "./react.d.ts",
+      "default": "./react.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "react.js",
+    "react.d.ts",
+    "README.md",
+    "LICENSE",
+    "skills"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "cookie-consent",
+    "gdpr",
+    "consent-mode",
+    "cookie-banner",
+    "cmp",
+    "cookiebot-alternative",
+    "react",
+    "nextjs",
+    "privacy"
+  ],
+  "homepage": "https://kindnod.com/docs/nextjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uptaconyc/kindnod.git",
+    "directory": "packages/kindnod"
+  },
+  "bugs": {
+    "url": "https://github.com/uptaconyc/kindnod/issues"
+  }
+}
